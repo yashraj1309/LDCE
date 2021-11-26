@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #555;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+#page {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+}
+
+/* Text */
+
+/* Text */
+h1 {
+    margin: 0 0 1em 0;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+h2 {
+    margin: 0 0 0.5em 0;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+h3 {
+    margin: 0 0 0.5em 0;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+h4 {
+    margin: 0 0 1.5em 0;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+p {
+    margin: 0 0 1em 0;
+    font-size: 1em;
+}
+a {
+    text-decoration: none;
+    color: brown;
+}
+a:hover {
+    color: rgba(202, 11, 11, 0.63);
+}
+
+/* Header */
+header {
+    height: 180px;
+    position: relative;
+}
+
+header a.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: inline-block;
+}
+
+header a.logo span {
+    display: none;
+}
+
+header h1 {
+    font-size: 2.1em;
+    position: absolute;
+    top: 40px;
+    left: 210px;
+    color: rgba(82, 0, 0, 0.932);
+}
+
+header h2 {
+    font-size: 1.7;
+    position: absolute;
+    top: 90px;
+    left: 210px;
+    color: rgba(82, 0, 0, 0.932);
+}
+
+header img.affi_gtu {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+}
+
+/* Section Main */
+
+section.main {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.main h2 {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.726);
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+/* Section Vision-Mision */
+
+section.vision_mission {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0;
+    height: 400px;
+}
+.vm_logo {
+    display: inline-block;
+    margin: 10px 20px 10px 20px;
+    float: left;
+    margin-top: 50px;
+}
+section.vision_mission aside {
+    width: 33%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Section Facility */
+section.Facility {
+    background-color: whitesmoke;
+    height: 140px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px 20px 10px 0px;
+}
+
+/* Section Contact Us */
+section.contact_us {
+    width: 400px;
+    margin: 20px auto 20px;
+    border: 3px inset black;
+    padding: 20px;
+    text-align: left;
+}
+section.contact_us h3 {
+    text-align: center;
+}
+
+/* Section Placements */
+section.Placements {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+    background-color: whitesmoke;
+    height: 150px;
+}
+
+section.Placements div {
+    float: left;
+    display: block;
+    margin-left: 70px;
+
+}
+section.Placements h2 {
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    position: absolute;
+    top: 140px;
+    left: 480px;
+    padding: 0;
+    width: 100%;  /* As wide as parent */
+}
+nav::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    float: left;
+    margin: 10px;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    height: 20px;
+}
+
