@@ -199,10 +199,10 @@ nav ul li a {
 
 footer {
     text-align: center;
-    height: 40px;
+    height: 20px;
 }
 footer div h3 {
-    font-size: 1.2em;
+    font-size: .8em;
     color: rgba(82, 0, 0, 0.932);
 }
 
