@@ -201,7 +201,7 @@ footer {
     text-align: center;
     height: 40px;
 }
-footer h3 {
+footer div h3 {
     font-size: 1.2em;
     color: rgba(82, 0, 0, 0.932);
 }
