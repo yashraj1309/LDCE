@@ -17,36 +17,11 @@ body {
 
 /* Text */
 
-/* Text */
-h1 {
-    margin: 0 0 1em 0;
-    font-size: 2.8em;
-    font-weight: 700;
-}
-h2 {
-    margin: 0 0 0.5em 0;
-    font-size: 1.6em;
-    font-weight: 700;
-    line-height: 1.1em;
-}
-h3 {
-    margin: 0 0 0.5em 0;
-    font-size: 1.3em;
-    font-weight: 700;
-}
-h4 {
-    margin: 0 0 1.5em 0;
-    font-size: 1em;
-    font-weight: 700;
-    line-height: 1.1em;
-}
-p {
-    margin: 0 0 1em 0;
-    font-size: 1em;
-}
+
 a {
     text-decoration: none;
     color: brown;
+    cursor: pointer;
 }
 a:hover {
     color: rgba(202, 11, 11, 0.63);
@@ -54,8 +29,12 @@ a:hover {
 
 /* Header */
 header {
-    height: 180px;
+    height: 200px;
     position: relative;
+}
+button {
+    all: unset;
+    cursor: pointer;
 }
 
 header a.logo {
@@ -64,31 +43,37 @@ header a.logo {
     left: 20px;
     display: inline-block;
 }
+.img-logo {
+    width: 80px;
+    height: 80px;
+}
 
-header a.logo span {
+header a span {
     display: none;
 }
 
 header h1 {
-    font-size: 2.1em;
-    position: absolute;
-    top: 40px;
-    left: 210px;
+    float: left;
     color: rgba(82, 0, 0, 0.932);
+    position: relative;
+    top: .01vh;
+    left: 8vw;
 }
 
-header h2 {
-    font-size: 1.7;
-    position: absolute;
-    top: 90px;
-    left: 210px;
+header h4 {
+    float: left;
     color: rgba(82, 0, 0, 0.932);
+    position: relative;
+    top: 2vh;
+    left: 26vw;
+    clear: left;
 }
 
-header img.affi_gtu {
+header img.AfiGtu {
     position: absolute;
-    top: 35px;
+    top: 50px;
     right: 20px;
+    clear: both;
 }
 
 /* Section Main */
@@ -101,7 +86,7 @@ section.main {
 
 .main h2 {
     border-bottom: 2px solid rgba(0, 0, 0, 0.726);
-    width: 400px;
+    width: auto;
     margin: 10px auto;
     padding: 10px;
 }
@@ -130,23 +115,23 @@ section.vision_mission aside {
 }
 
 /* Section Facility */
-section.Facility {
+.Facility {
     background-color: whitesmoke;
-    height: 140px;
+    height: 180px;
     width: 100%;
     padding: 20px;
     margin: 20px 20px 10px 0px;
 }
 
 /* Section Contact Us */
-section.contact_us {
+.contact_us {
     width: 400px;
     margin: 20px auto 20px;
     border: 3px inset black;
     padding: 20px;
     text-align: left;
 }
-section.contact_us h3 {
+.contact_us h3 {
     text-align: center;
 }
 
@@ -155,47 +140,75 @@ section.Placements {
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 20px;
-    background-color: whitesmoke;
-    height: 150px;
+    height: 200px;
 }
 
-section.Placements div {
+.Placements div {
     float: left;
     display: block;
-    margin-left: 70px;
+    margin-left: 40px;
 
 }
-section.Placements h2 {
+.Placements h2 {
     text-align: center;
+    background-color: aliceblue;
+}
+.p_logos {
+    margin: 30px 30px 30px 50px;
 }
 
 /* Navbar */
-nav {
-    position: absolute;
-    top: 140px;
-    left: 480px;
-    padding: 0;
-    width: 100%;  /* As wide as parent */
+.menuDiv {
+    width: max-content;
+    display: none;
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-nav::after{
-    content: '';
-    display: block;
-    clear: both;
+.menuIcon {
+    color: #000;
+    width: 34px;
+    height: 34px;
 }
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.menuDiv:hover {
+    color: brown;
 }
-nav ul li {
-    float: left;
-    margin: 10px;
+nav.navb {
+    float: inline-start;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin: 20px;
 }
-nav ul li a {
+a.aLink {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
     color: black;
-    text-decoration: none;
-    position: relative;
+    letter-spacing: normal;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    border-radius: 34px;
+    text-align: center;
+    margin-left: 34px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
+a.aLink:hover {
+    text-shadow: #555;
+    border-bottom: 2px solid black;
+    border-radius: 34px;
+    background: linear-gradient(314.7deg,#06f 34.84%,#25a9f4 89.75%);
+    transition: .2s border-bottom ease-in;
+    transition: .3s background ease-in-out;
+    color: white;
+}
+
+
+/* footer */
 
 footer {
     text-align: center;
@@ -206,3 +219,50 @@ footer div h3 {
     color: rgba(82, 0, 0, 0.932);
 }
 
+@media screen and (max-width: 992px) {
+    header img.AfiGtu {
+        display: none;
+    }
+    #page {
+        max-width: 992px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    nav.navb {
+        display: none;
+    }
+    .menuDiv {
+        display: flex;
+        margin: auto;
+    }
+    .menuDiv a,span{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .img-logo {
+        width: 60px;
+        height: 60px;
+        float: inline-start;
+    }
+    header h1 {
+        position: relative;
+        top: .1vh;
+        float: inline-end;
+    }
+    header h4 {
+        position: relative;
+        top: 1vh;
+        left: 7vw;
+    }
+    section.Placements {
+        height: 600px;
+    }
+    #page {
+        max-width: 380px;
+    }
+  }
