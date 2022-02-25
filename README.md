@@ -1,4 +1,4 @@
-Simple College Website Project Made with Html and Css
+Simple College Website Project (Responsive)  Made with Html,Css,bootstrap and Javascript.
 
 Live On Web :- https://yashraj1309.github.io/
 
