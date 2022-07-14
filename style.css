@@ -154,6 +154,13 @@ section.Placements {
     margin: 30px 30px 30px 50px;
 }
 
+.p_logos img {
+    transition: .3s;
+}
+.p_logos img:hover {
+    transform: scale(1.1);
+}
+
 /* Navbar */
 .menuDiv {
     width: max-content;
